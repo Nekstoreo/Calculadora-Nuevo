@@ -44,6 +44,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         IngresarDatos.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         IngresarDatos.setText("Ingresar");
+        IngresarDatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         IngresarDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 IngresarDatosActionPerformed(evt);
@@ -56,11 +57,13 @@ public class NewJFrame extends javax.swing.JFrame {
 
         Dia.setFont(new java.awt.Font("Myanmar Text", 0, 18)); // NOI18N
         Dia.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Dia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        etiquetames.setFont(new java.awt.Font("Segoe UI Historic", 0, 14)); // NOI18N
+        etiquetames.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         etiquetames.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiquetames.setText("Mes");
 
+        etiquetadia.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         etiquetadia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etiquetadia.setText("Dia");
 
@@ -68,7 +71,8 @@ public class NewJFrame extends javax.swing.JFrame {
         SignoFinal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         SignoFinal.setText("signo aqui");
 
-        Mes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", " " }));
+        Mes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "" }));
+        Mes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
