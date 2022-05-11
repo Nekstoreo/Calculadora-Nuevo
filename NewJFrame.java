@@ -35,9 +35,10 @@ public class NewJFrame extends javax.swing.JFrame {
         SignoFinal = new javax.swing.JLabel();
         Mes = new javax.swing.JComboBox<>();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jButton1 = new javax.swing.JButton();
+        Botoncerrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculadora del zodiaco");
 
         Titulo.setFont(new java.awt.Font("Old English Text MT", 0, 48)); // NOI18N
         Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -75,14 +76,14 @@ public class NewJFrame extends javax.swing.JFrame {
         Mes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre", "" }));
         Mes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton1.setText("Salir");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Botoncerrar.setText("Salir");
+        Botoncerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BotoncerrarActionPerformed(evt);
             }
         });
 
-        jLayeredPane1.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(Botoncerrar, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
@@ -90,13 +91,13 @@ public class NewJFrame extends javax.swing.JFrame {
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1))
+                .addComponent(Botoncerrar))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
                 .addGap(0, 32, Short.MAX_VALUE)
-                .addComponent(jButton1))
+                .addComponent(Botoncerrar))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -194,9 +195,9 @@ public class NewJFrame extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_IngresarDatosActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void BotoncerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotoncerrarActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_BotoncerrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -234,6 +235,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Botoncerrar;
     private javax.swing.JTextField Dia;
     private javax.swing.JButton IngresarDatos;
     private javax.swing.JComboBox<String> Mes;
@@ -242,7 +244,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel etiquetadia;
     private javax.swing.JLabel etiquetames;
     private javax.swing.JLabel etiquetasigno;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 }
